@@ -2,7 +2,7 @@
 
 ## Paths
 
-- [TEST](#javascript-the-hard-parts-v2/README.md)
+- [TEST](/javascript-the-hard-parts-v2/README.md)
 
 #### Learning Paths
 
