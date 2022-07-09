@@ -1,4 +1,4 @@
-# Javascript: The Hard Parts v2 by Will Sentence @ _[FrontendMasters.com](https://frontendmasters.com/courses/javascript-hard-parts-v2/)_
+# [Javascript: The Hard Parts v2 by Will Sentence](https://frontendmasters.com/courses/javascript-hard-parts-v2/)
 
 ## Contents
 
