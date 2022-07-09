@@ -1,7 +1,5 @@
 # Notes on FrontendMasters Courses
 
-This repo contains the notes that I took during the courses on [FrontendMasters.com](https://frontendmasters.com/)
-
 ## Paths
 
 - [TEST](#javascript-the-hard-parts-v2/README)
