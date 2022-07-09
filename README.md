@@ -2,9 +2,9 @@
 
 <h5 style="margin-bottom: 5px">Disclaimer</h5>
 
-I only added the courses and paths that I am interested in. To see all the content, [visit the site](https://frontendmasters.com/)
+I only added the courses and paths that I am interested in. To see all the content, [visit the site](https://frontendmasters.com/).
 
-- ## Learning Paths
+## Learning Paths
 
   - [ ] [Beginner](#beginner)
   - [ ] [Professional](#professional)
@@ -12,7 +12,7 @@ I only added the courses and paths that I am interested in. To see all the conte
   - [ ] [Computer Science](#computer-science)
   - [ ] [Fullstack](#fullstack)
 
-- ## Topic Paths
+## Topic Paths
 
   - [ ] [Javascript](#javascript)
   - [ ] [CSS](#css)
@@ -24,8 +24,8 @@ I only added the courses and paths that I am interested in. To see all the conte
   - [ ] [Webpack](#webpack)
   - [ ] [Async JS & Rx.js](#async-js-rx-js)
 
-- ## Standalone Courses
-
+## Standalone Courses
+  - TODO
 ---
 
 ## Learning Paths
