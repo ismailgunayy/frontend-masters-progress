@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 60px 20px 20px;
+}
+
+.brand-header {
+  font-family: "Tangerine", cursive;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.brand {
+  font-size: 100px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.column {
+  border-right: 1px solid black;
+  padding: 10px;
+}
+
+.quarter {
+  width: 25%;
+}
+
+.half {
+  width: 50%;
+}
+
+.three-quarter {
+  width: 75%;
+}
+
+.article-title {
+  font-size: 35px;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 30px;
+  text-align: center;
+}
+
+.article-img {
+  width: 100%;
+  text-align: center;
+}
+
+.article-content {
+  font-size: 18px;
+  margin: 10px 5px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.site-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.section-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+.site-section-politics {
+  background-color: #ffeaa7;
+}
+
+.site-section-tech {
+  background-color: #81ecec;
+}
+
+.site-section-local {
+  background-color: #55efc4;
+}
+
+.site-section-opinion {
+  background-color: #74b9ff;
+}
+
+.site-section-sports {
+  background-color: #a29bfe;
+}

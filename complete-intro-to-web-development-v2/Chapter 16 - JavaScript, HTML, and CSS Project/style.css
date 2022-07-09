@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 500px;
+}
+
+.calculator *::selection {
+
+  background-color: #8f9091;
+}
+
+.screen {
+  text-align: right;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 60px;
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.calc-button {
+  width: 25%;
+  background-color: #d8d9db;
+  border: 0.5px solid black;
+  font-size: 45px;
+  padding: 30px;
+}
+
+.calc-button:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+.calc-button:active {
+  background-color: #8f9091;
+}
+
+.operator {
+  background-color: #df974c;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #dfb07e;
+}
+
+.operator:active {
+  background-color: #ac7439;
+}
+
+.half {
+  width: 50%;
+}
+
+.three-quarters {
+  width: 75%;
+}
