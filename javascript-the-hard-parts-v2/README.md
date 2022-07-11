@@ -1,5 +1,11 @@
 # [Javascript: The Hard Parts v2 by Will Sentence](https://frontendmasters.com/courses/javascript-hard-parts-v2/)
 
+## Description
+
+Go under the hood of some of the most important aspects of JavaScript! You'll learn what you need to know to become a sought-after, versatile, problem-solving developer. Combining mental models of JavaScript's inner workings and hands-on programming challenges, this course will give you a solid understanding of callbacks and higher-order functions, closure, asynchronous JavaScript, and object-oriented JavaScript! This course is for developers with a basic to intermediate knowledge of JavaScript who wants to deepen their understanding of the fundamentals to the next level.
+
+---
+
 ## Contents
 
 - [Javascript Principles](#js-principles)
@@ -248,4 +254,4 @@
   - A new empty object is created.
   - The new object’s internal ‘Prototype’ property (\_\_proto\_\_) is set the same as the prototype of the constructing function.
   - The ‘this’ variable is made to point to the newly created object. It binds the property which is declared with ‘this’ keyword to the new object.
-  - A newly created object is returned when the constructor function returns a non-primitive value (custom JavaScript object). If the constructor function returns a primitive value, it will be ignored. At the end of the function, ‘this’ is returned if there is no return statement in the function body. [*Ref*](https://www.geeksforgeeks.org/javascript-new-keyword/#:~:text=New%20keyword%20in,the%20function%20body.)
+  - A newly created object is returned when the constructor function returns a non-primitive value (custom JavaScript object). If the constructor function returns a primitive value, it will be ignored. At the end of the function, ‘this’ is returned if there is no return statement in the function body. [_Ref_](https://www.geeksforgeeks.org/javascript-new-keyword/#:~:text=New%20keyword%20in,the%20function%20body.)
