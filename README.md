@@ -34,10 +34,10 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 [Back to Top](#top)
 
-- [x] [Complete Intro to Web Development, v2](/complete-intro-to-web-development-v2/README.md)
-- [x] [Getting Started with CSS](/getting-started-with-css/README.md)
-- [x] [Getting Started with JavaScript, v2](/getting-started-with-javascript-v2/README.md)
-- [x] [JavaScript: From Fundamentals to Functional JS, v2](/javascript-from-fundamentals-to-functional-js-v2/README.md)
+- [x] [Complete Intro to Web Development, v2](/complete-intro-to-web-development-v2)
+- [x] [Getting Started with CSS](/getting-started-with-css)
+- [x] [Getting Started with JavaScript, v2](/getting-started-with-javascript-v2)
+- [x] [JavaScript: From Fundamentals to Functional JS, v2](/javascript-from-fundamentals-to-functional-js-v2)
 - [ ] Website Accessibility, v2
 
 ###### Electives
@@ -53,7 +53,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 [Back to Top](#top)
 
-- [x] [JavaScript: The Hard Parts, v2](/javascript-the-hard-parts-v2/README.md)
+- [x] [JavaScript: The Hard Parts, v2](/javascript-the-hard-parts-v2)
 - [ ] Deep JavaScript Foundations, v3
 - [ ] Complete Intro to React, v7
 - [ ] Web Performance Fundamentals
@@ -151,8 +151,8 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 [Back to Top](#top)
 
-- [x] [JavaScript: From Fundamentals to Functional JS, v2](/javascript-from-fundamentals-to-functional-js-v2/README.md)
-- [x] [JavaScript: The Hard Parts, v2](/javascript-the-hard-parts-v2/README.md)
+- [x] [JavaScript: From Fundamentals to Functional JS, v2](/javascript-from-fundamentals-to-functional-js-v2)
+- [x] [JavaScript: The Hard Parts, v2](/javascript-the-hard-parts-v2)
 - [ ] Deep JavaScript Foundations, v3
 - [ ] JavaScript: The Recent Parts
 - [ ] JavaScript: The New Hard Parts
@@ -175,7 +175,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 [Back to Top](#top)
 
-- [x] [Getting Started with CSS](/getting-started-with-css/README.md)
+- [x] [Getting Started with CSS](/getting-started-with-css)
 - [ ] CSS Grid & Flexbox for Responsive Layouts, v2
 - [ ] SVG Essentials & Animation, v2
 - [ ] Advanced CSS Layouts
