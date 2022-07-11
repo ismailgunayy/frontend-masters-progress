@@ -8,8 +8,8 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ## Included Paths
 
-- [Professional](/README.md#professional)
-- [Javascript](/README.md#javascript)
+- [Professional](frontend-masters-progress/blob/master/README.md#professional)
+- [Javascript](frontend-masters-progress/blob/master/README.md#javascript)
 
 ---
 
