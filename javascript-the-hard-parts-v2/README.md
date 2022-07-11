@@ -8,8 +8,10 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ## Included Paths
 
-- [Professional](../README.md#professional)
-- [Javascript](../README.md#javascript)
+- [Professional](../#professional)
+- [Javascript](../#javascript)
+
+---
 
 ## Contents
 
