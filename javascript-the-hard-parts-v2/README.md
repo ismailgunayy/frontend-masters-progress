@@ -8,8 +8,8 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ## Included Paths
 
-- [Professional](frontend-masters-progress/tree/master/README.md#professional)
-- [Javascript](frontend-masters-progress/tree/master/README.md#javascript)
+- [Professional](https://github.com/ismailgunayy/frontend-masters-progress#professional)
+- [Javascript](https://github.com/ismailgunayy/frontend-masters-progress#javascript)
 
 ---
 
