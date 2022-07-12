@@ -6,26 +6,28 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 ## Learning Paths
 
-  - [ ] [Beginner](#beginner)
-  - [ ] [Professional](#professional)
-  - [ ] [Expert](#expert)
-  - [ ] [Computer Science](#computer-science)
-  - [ ] [Fullstack](#fullstack)
+- [ ] [Beginner](#beginner)
+- [ ] [Professional](#professional)
+- [ ] [Expert](#expert)
+- [ ] [Computer Science](#computer-science)
+- [ ] [Fullstack](#fullstack)
 
 ## Topic Paths
 
-  - [ ] [Javascript](#javascript)
-  - [ ] [CSS](#css)
-  - [ ] [Node.js](#nodejs)
-  - [ ] [React](#react)
-  - [ ] [Vue](#vue)
-  - [ ] [Typescript](#typescript)
-  - [ ] [Functional Javascript](#functional-javascript)
-  - [ ] [Webpack](#webpack)
-  - [ ] [Async JS & Rx.js](#async-js-rx-js)
+- [ ] [Javascript](#javascript)
+- [ ] [CSS](#css)
+- [ ] [Node.js](#nodejs)
+- [ ] [React](#react)
+- [ ] [Vue](#vue)
+- [ ] [Typescript](#typescript)
+- [ ] [Functional Javascript](#functional-javascript)
+- [ ] [Webpack](#webpack)
+- [ ] [Async JS & Rx.js](#async-js-rx-js)
 
 ## Standalone Courses
-  - TODO
+
+- TODO
+
 ---
 
 ## Learning Paths
@@ -313,7 +315,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 ###### Electives
 
-- [ ] Rethinking Asynchronous JavaScriptm
+- [ ] Rethinking Asynchronous JavaScript
 - [ ] Functional-Light JavaScript, v3
 
 ---

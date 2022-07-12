@@ -50,7 +50,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
   - null?
     - _null_ is a primitive type according to specification
     - `typeof null === "object"` asserts _true_, actually this is a bug
-    - it is suggested to use _undefined_ when undefine primitive values and use _null_ when undefine an object or a subtype of 
+    - it is suggested to use _undefined_ when undefine primitive values and use _null_ when undefine an object or a subtype of
   - undeclared?
     - more of a behavior than a type
     - occurs when a variable hasn't been declared using var, let or const
@@ -59,42 +59,43 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
     - `typeof myFunc === "function"` asserts _true_
     - subtype of the object, callable, not primitive
   - array?
-    - subtype of the object   
+    - subtype of the object
     - type of arrays can be checked with built-in `Array.isArray` method
 
-
 - **typeof** operator
+
   - returns the type of the value (variables don't have types, values do)
   - returns the type as string
     - e.g. `typeof undefined === "undefined"` asserts _true_
   - use only for primitive types
 
-
 - **Special Values**
+
   - NaN & isNaN (Not a Number)
+
     - _NaN_ values are not equal to each other
-    
     - `NaN === NaN` asserts _false_
     - isNaN method coerces values to numbers before it checks for them to be _NaN_
     - `isNaN("foo")` asserts _true_
     - Number.isNaN can be used to determine if the value is definitely _NaN_
     - Type of _NaN_ is number because it actually is an _invalid_ number
-    
+
   - Negative Zero _(-0)_
     - can be used as a sign, for example when you need to keep track of what direction that a trend is moving, while the number indicates the quantity the sign may indicate the direction
-    
-    
+
 - **Fundamental Objects**
+
   - also referred as _Built-In Objects_ or _Native Functions_
-  
+
   - use **new** with:
+
     - Object()
     - Array()
     - Function()
     - Date()
     - RegExp()
     - Error()
-    
+
   - don't use **new** with:
     - String()
     - Number()
