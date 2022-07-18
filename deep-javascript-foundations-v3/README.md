@@ -129,7 +129,19 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 [Back to Contents](#contents)
 
-- List Item 1
+- **==** vs **==**
+
+  - The argument, '~~Loose equality checks value while strict equality check both value and type~~', is wrong
+  - **==** allows coercion when the types are different (cause when the types are the same strict equality runs under the hood)kj
+  - **===** disallows coercion when the types are the same
+
+- If you **know** the types in a comparison
+
+  - **==** is the _more powerful_, _faster_, _cleaner_, and _more sensible_ solution
+
+- If you **don't know** the types in a comparison
+  - Not knowing types means not fully understanding the code, best to refactor so you can know the types
+  - **===** is an obvious signal of not knowing the types to reader, use it as the safest choice if you don't or can't know the types.
 
 ---
 
