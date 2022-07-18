@@ -1,0 +1,4 @@
+/course-template
+node_modules
+*.log
+build/
