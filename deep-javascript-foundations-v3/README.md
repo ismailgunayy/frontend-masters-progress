@@ -169,7 +169,12 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 [Back to Contents](#contents)
 
-- List Item 1
+- **scope** is where to look for things
+  - JavaScript organizes scopes with <u>functions</u> and <u>blocks</u>
+
+- **undefined** vs **undeclared**
+  - *undefined* means that there is a variable created but the variable does not have a value right now
+  - *undeclared* means that the variable we try to access to is never formally declared in any scope that we have accessed to, in strict mode it results in *ReferenceError*
 
 ---
 
