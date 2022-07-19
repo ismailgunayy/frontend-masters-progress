@@ -170,11 +170,12 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 [Back to Contents](#contents)
 
 - **scope** is where to look for things
+
   - JavaScript organizes scopes with <u>functions</u> and <u>blocks</u>
 
 - **undefined** vs **undeclared**
-  - *undefined* means that there is a variable created but the variable does not have a value right now
-  - *undeclared* means that the variable we try to access to is never formally declared in any scope that we have accessed to, in strict mode it results in *ReferenceError*
+  - _undefined_ means that there is a variable created but the variable does not have a value right now
+  - _undeclared_ means that the variable we try to access to is never formally declared in any scope that we have accessed to, in strict mode it results in _ReferenceError_
 
 ---
 
@@ -182,7 +183,33 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 [Back to Contents](#contents)
 
-- List Item 1
+- there are 2 ways of creating a function
+  - **Function Declaration**
+    ```js
+    function test() {
+      ...
+    }
+    ```
+  - **Function Expression**
+    ```js
+    var test = function() {
+      ...
+    } // Anonymous Function Expression
+
+    var test2 = function named() {
+      ...
+    } // Named Function Expression
+
+    myObj.method = function testMethod() {
+      ...
+    }
+    ```
+
+- *Kyle Simpson* recommends using function declaration when it is possible, but if you have to use function expression he recommends always (100%) using named function expressions instead of anonymous function expressions for these 3 reasons:
+  - create a more reliable function self-reference
+  - make stack traces more debuggable
+  - make the code more self-documenting
+
 
 ---
 
