@@ -17,19 +17,19 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ---
 
-#### <span id="js-principles">Javascript Principles</span>
+### <span id="js-principles">Javascript Principles</span>
 
 [Back to Contents](#contents)
 
 - Javascript goes through the code line by line and executes each line. This is known as **thread of execution**
-- Body of the functions are saved into memory when they are defined. <span id="local-memory">When they are invoked/called they create their own **execution context** which has a **local memory/variable environment/state** belongs to them.</span>
+ Body of the functions are saved into memory when they are defined. <span id="local-memory">When they are invoked/called they create their own **execution context** hich has a **local memory/variable environment/state** belongs to them.</span>
 
 - Javascript keeps track of what function is currently running and what functions are called from within that function. This is called **Call Stack**. At the bottom of this stack, there is always the \***\*main/global** function call.
   ![call stack in js](./assets/images/call_stack.jpg 'Call Stack in JS')
 
 ---
 
-#### <span id="functions-callbacks">Functions & Callbacks</span>
+### <span id="functions-callbacks">Functions & Callbacks</span>
 
 [Back to Contents](#contents)
 
@@ -80,7 +80,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ---
 
-#### <span id="closures">Closures</span>
+### <span id="closures">Closures</span>
 
 [Back to Contents](#contents)
 
@@ -135,7 +135,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ---
 
-#### <span id="async-js">Asynchronous Javascript & _the event loop_</span>
+### <span id="async-js">Asynchronous Javascript & _the event loop_</span>
 
 [Back to Contents](#contents)
 
@@ -169,7 +169,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ---
 
-#### <span id="promises">Promises _(ES6+)_</span>
+### <span id="promises">Promises _(ES6+)_</span>
 
 [Back to Contents](#contents)
 
@@ -218,7 +218,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ---
 
-#### <span id="classes-prototypes">Classes & Prototypes</span>
+### <span id="classes-prototypes">Classes & Prototypes</span>
 
 [Back to Contents](#contents)
 
@@ -255,3 +255,5 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
   - The new object’s internal ‘Prototype’ property (\_\_proto\_\_) is set the same as the prototype of the constructing function.
   - The ‘this’ variable is made to point to the newly created object. It binds the property which is declared with ‘this’ keyword to the new object.
   - A newly created object is returned when the constructor function returns a non-primitive value (custom JavaScript object). If the constructor function returns a primitive value, it will be ignored. At the end of the function, ‘this’ is returned if there is no return statement in the function body. [_Ref_](https://www.geeksforgeeks.org/javascript-new-keyword/#:~:text=New%20keyword%20in,the%20function%20body.)
+
+---

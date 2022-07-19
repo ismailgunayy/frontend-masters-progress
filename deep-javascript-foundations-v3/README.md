@@ -23,7 +23,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="introduction">Introduction</span>
+### <span id="introduction">Introduction</span>
 
 [Back to Contents](#contents)
 
@@ -33,7 +33,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="types">Types</span>
+### <span id="types">Types</span>
 
 [Back to Contents](#contents)
 
@@ -103,7 +103,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="coercion">Coercion</span>
+### <span id="coercion">Coercion</span>
 
 [Back to Contents](#contents)
 
@@ -115,7 +115,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="philosophy-of-coercion">Philosophy of Coercion</span>
+### <span id="philosophy-of-coercion">Philosophy of Coercion</span>
 
 [Back to Contents](#contents)
 
@@ -125,7 +125,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="equality">Equality</span>
+### <span id="equality">Equality</span>
 
 [Back to Contents](#contents)
 
@@ -145,7 +145,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="static-typing">Static Typing</span>
+### <span id="static-typing">Static Typing</span>
 
 [Back to Contents](#contents)
 
@@ -165,7 +165,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="scope">Scope</span>
+### <span id="scope">Scope</span>
 
 [Back to Contents](#contents)
 
@@ -179,7 +179,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="scope-function-expressions">Scope & Function Expressions</span>
+### <span id="scope-function-expressions">Scope & Function Expressions</span>
 
 [Back to Contents](#contents)
 
@@ -213,7 +213,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="advanced-scope">Advanced Scope</span>
+### <span id="advanced-scope">Advanced Scope</span>
 
 [Back to Contents](#contents)
 
@@ -221,7 +221,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="closure">Closure</span>
+### <span id="closure">Closure</span>
 
 [Back to Contents](#contents)
 
@@ -229,7 +229,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="objects">Objects</span>
+### <span id="objects">Objects</span>
 
 [Back to Contents](#contents)
 
@@ -237,7 +237,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 ---
 
-#### <span id="prototypes">Prototypes</span>
+### <span id="prototypes">Prototypes</span>
 
 [Back to Contents](#contents)
 

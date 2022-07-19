@@ -42,7 +42,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [x] [JavaScript: From Fundamentals to Functional JS, v2](/javascript-from-fundamentals-to-functional-js-v2)
 - [ ] Website Accessibility, v2
 
-###### Electives
+##### Electives
 
 - [ ] Introduction to Dev Tools, v3
 - [ ] Modern Search Engine Optimization (SEO)
@@ -64,7 +64,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] TypeScript Fundamentals, v3
 - [ ] Functional JavaScript First Steps
 
-###### Electives
+##### Electives
 
 - [ ] Redux Fundamentals (feat. React)
 - [ ] Build Progressive Web Apps (PWAs) from Scratch
@@ -91,7 +91,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Developer Productivity
 - [ ] Asynchronous Programming in JavaScript (with Rx.js Observables)
 
-###### Electives
+##### Electives
 
 - [ ] Complete Intro to Real-Time
 - [ ] Exploring Service Workers
@@ -113,7 +113,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Introduction to Data Structures for Interviews
 - [ ] Tree and Graph Data Structures
 
-###### Electives
+##### Electives
 
 - [ ] Web Assembly (Wasm)
 - [ ] Functional JavaScript First Steps
@@ -134,7 +134,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] AWS For Front-End Engineers, v2
 - [ ] Complete Intro to Containers (feat. Docker)
 
-###### Electives
+##### Electives
 
 - [ ] Developer Productivity
 - [ ] Git In-depth
@@ -162,7 +162,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Hardcore Functional Programming in JavaScript, v2
 - [ ] Accessibility in JavaScript Applications
 
-###### Electives
+##### Electives
 
 - [ ] TypeScript Fundamentals, v3
 - [ ] JavaScript Performance
@@ -183,7 +183,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Advanced CSS Layouts
 - [ ] Dynamic CSS with Custom Properties (aka CSS Variables)
 
-###### Electives
+##### Electives
 
 - [ ] Design for Developers
 - [ ] CSS In-Depth, v2
@@ -206,7 +206,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Server-Side GraphQL in Node.js
 - [ ] Full Stack for Front-End Engineers, v2
 
-###### Electives
+##### Electives
 
 - [ ] Complete Intro to Real-Time
 - [ ] Introduction to MongoDB
@@ -225,7 +225,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Intermediate React, v4
 - [ ] State Management in Pure React, v2
 
-###### Electives
+##### Electives
 
 - [ ] React and TypeScript
 - [ ] Redux Fundamentals (feat. React)
@@ -247,7 +247,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Building Applications with Vue & Nuxt
 - [ ] Production-Grade Vue.js
 
-###### Electives
+##### Electives
 
 - [ ] Vuex for Intermediate Vue.js Developers
 - [ ] Advanced Vue.js Features from the Ground Up
@@ -263,7 +263,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Making TypeScript Stick
 - [ ] Production-Grade TypeScript
 
-###### Electives
+##### Electives
 
 - [ ] React and TypeScript
 - [ ] JavaScript and TypeScript Monorepos
@@ -281,7 +281,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Functional-Light JavaScript, v3
 - [ ] Hardcore Functional Programming in JavaScript, v2
 
-###### Electives
+##### Electives
 
 - [ ] Hardcore Functional Architecture Patterns in JavaScript
 - [ ] Redux Fundamentals (feat. React)
@@ -297,7 +297,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Webpack 4 Fundamentals
 - [ ] Web Performance with Webpack
 
-###### Electives
+##### Electives
 
 - [ ] Webpack Plugins System
 - [ ] JavaScript and TypeScript Monorepos
@@ -313,7 +313,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Asynchronous Programming in JavaScript (with Rx.js Observables)
 - [ ] Advanced Asynchronous JavaScript
 
-###### Electives
+##### Electives
 
 - [ ] Rethinking Asynchronous JavaScript
 - [ ] Functional-Light JavaScript, v3
