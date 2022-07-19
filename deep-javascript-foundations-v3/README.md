@@ -75,9 +75,9 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
     - _NaN_ values are not equal to each other
     - `NaN === NaN` asserts _false_
-    - isNaN method coerces values to numbers before it checks for them to be _NaN_
+    - `isNaN` method coerces values to numbers before it checks for them to be _NaN_
     - `isNaN("foo")` asserts _true_
-    - Number.isNaN can be used to determine if the value is definitely _NaN_
+    - `Number.isNaN` can be used to determine if the value is definitely _NaN_
     - Type of _NaN_ is number because it actually is an _invalid_ number
 
   - Negative Zero _(-0)_
@@ -108,7 +108,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 [Back to Contents](#contents)
 
 - _The ECMAScript language implicitly performs automatic type conversion as needed. To clarify the semantics of certain constructs it is useful to define a set of conversion abstract operations. The conversion abstract operations are polymorphic; they can accept a value of any ECMAScript language type._ [Ref](https://262.ecma-international.org/13.0/#sec-abstract-operations:~:text=The%20ECMAScript%20language%20implicitly%20performs%20automatic%20type%20conversion%20as%20needed.%20To%20clarify%20the%20semantics%20of%20certain%20constructs%20it%20is%20useful%20to%20define%20a%20set%20of%20conversion%20abstract%20operations.%20The%20conversion%20abstract%20operations%20are%20polymorphic%3B%20they%20can%20accept%20a%20value%20of%20any%20ECMAScript%20language%20type)
-  - There are abstract operations in the implementation of JS (which are not a function itself but a set of algorithms) like toPrimitive, toString, toNumeric, toBoolean
+  - there are abstract operations in the implementation of JS (which are not a function itself but a set of algorithms) like toPrimitive, toString, toNumeric, toBoolean
     <br>
 - _coercion_ and _conversion_ is interchangeable in JS
 - _boxing_ concept creates object instance from primitive values e.g. when you access _length_ property of a string. this is why people says '_everything is object in JS_'
@@ -131,7 +131,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 - **==** vs **==**
 
-  - The argument, '~~Loose equality checks value while strict equality check both value and type~~', is wrong
+  - the argument, '~~Loose equality checks value while strict equality check both value and type~~', is wrong
   - **==** allows coercion when the types are different (cause when the types are the same strict equality runs under the hood)kj
   - **===** disallows coercion when the types are the same
 
@@ -140,7 +140,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
   - **==** is the _more powerful_, _faster_, _cleaner_, and _more sensible_ solution
 
 - If you **don't know** the types in a comparison
-  - Not knowing types means not fully understanding the code, best to refactor so you can know the types
+  - not knowing types means not fully understanding the code, best to refactor so you can know the types
   - **===** is an obvious signal of not knowing the types to reader, use it as the safest choice if you don't or can't know the types.
 
 ---
@@ -149,7 +149,19 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 [Back to Contents](#contents)
 
-- List Item 1
+- **Static Typing** is
+
+  - _'A programming language characteristic in which variable types are explicitly declared and thus are determined at compile time. This lets the compiler decide whether a given variable can perform the actions requested from it or not.'_ [Ref](https://www.techopedia.com/definition/22321/statically-typed#:~:text=Statically%20typed%20is%20a%20programming%20language%20characteristic%20in%20which%20variable%20types%20are%20explicitly%20declared%20and%20thus%20are%20determined%20at%20compile%20time.%20This%20lets%20the%20compiler%20decide%20whether%20a%20given%20variable%20can%20perform%20the%20actions%20requested%20from%20it%20or%20not.)
+
+- _Pros_ of Static Typing
+
+  - they make the types more obvious in code
+  - familiarity, syntax are similar to other statically typed languages (for TypeScript and Flow)
+  - extremely popular (good investment)
+
+- _Cons_ of Static Typing
+  - _non-js-standard_ syntax
+  - require build process
 
 ---
 
