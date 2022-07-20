@@ -1,4 +1,4 @@
-# [Javascript: The Hard Parts v2 by Will Sentence](https://frontendmasters.com/courses/javascript-hard-parts-v2/)
+# [JavaScript: The Hard Parts v2 by Will Sentence](https://frontendmasters.com/courses/javascript-hard-parts-v2/)
 
 ## Description
 
@@ -8,23 +8,24 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ## Contents
 
-- [Javascript Principles](#js-principles)
+- [JavaScript Principles](#js-principles)
 - [Functions & Callbacks](#functions-callbacks)
 - [Closures](#closures)
-- [Asynchronous Javascript & _the event loop_](#async-js)
+- [Asynchronous JavaScript & _the event loop_](#async-js)
 - [Promises _(ES6+)_](#promises)
 - [Classes & Prototypes](#classes-prototypes)
 
 ---
 
-### <span id="js-principles">Javascript Principles</span>
+### <span id="js-principles">JavaScript Principles</span>
 
 [Back to Contents](#contents)
 
-- Javascript goes through the code line by line and executes each line. This is known as **thread of execution**
- Body of the functions are saved into memory when they are defined. <span id="local-memory">When they are invoked/called they create their own **execution context** hich has a **local memory/variable environment/state** belongs to them.</span>
+- JavaScript goes through the code line by line and executes each line. This is known as **thread of execution**
+  Body of the functions are saved into memory when they are defined. <span id="local-memory">When they are invoked/called they create their own **execution context** which has a **local memory/variable environment/state** belongs to them.</span>
 
-- Javascript keeps track of what function is currently running and what functions are called from within that function. This is called **Call Stack**. At the bottom of this stack, there is always the \***\*main/global** function call.
+- JavaScript keeps track of what function is currently running and what functions are called from within that function. This is called **Call Stack**. At the bottom of this stack, there is always the **main/global** function call.
+
   ![call stack in js](./assets/images/call_stack.jpg 'Call Stack in JS')
 
 ---
@@ -33,7 +34,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 [Back to Contents](#contents)
 
-- **Callback function** is a function which passed as an argument to another function.
+- **Callback Function** is a function which passed as an argument to another function.
 
   For example:
 
@@ -66,7 +67,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 <br/>
 
-- Functions in Javascript are **objects**.
+- Functions in JavaScript are **objects**.
   - They can assigned to variables or properties of other objects (these functions are called **methods**).
   - They can passed as arguments into functions.
   - They can returned as values from functions.
@@ -74,7 +75,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 <br/>
 
 - **Higher Order Functions** are the functions that take in a function or return a function or both.
-  - Supports the **DRY Principle** (Don't Repeaty Yourself).
+  - Supports the **DRY Principle** (Don't Repeat Yourself).
   - Allows us to create more **generalized** functions.
   - Makes our code more **declarative** and **readable**.
 
@@ -84,7 +85,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 [Back to Contents](#contents)
 
-- **Closure** is the definition a function with memory in short terms. When the functions get invoked, Javascript create a [store of data](#local-memory) for that function's execution context. Also, functions keep all the data in their scope in a hidden property known as _[\[scope]]_ which persists. As a result, we have a function bundled with references to its surrounding state. In other words, a closure gives you access to an outer function's scope from an inner function even when the inner function is invoked from the outside of the outer function.
+- **Closure** is the definition a function with memory in short terms. When the functions get invoked, JavaScript create a [store of data](#local-memory) for that function's execution context. Also, functions keep all the data in their scope in a hidden property known as _[\[scope]]_ which persists. As a result, we have a function bundled with references to its surrounding state. In other words, a closure gives you access to an outer function's scope from an inner function even when the inner function is invoked from the outside of the outer function.
 
   For example:
 
@@ -126,7 +127,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
   import test from './file1.js';
 
   console.log(value); // 0
-  test(); // 1 - The fupnction will log the value because it is told to
+  test(); // 1 - The function will log the value because it is told to
   test(); // 2
   test(); // 3
 
@@ -135,25 +136,29 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ---
 
-### <span id="async-js">Asynchronous Javascript & _the event loop_</span>
+### <span id="async-js">Asynchronous JavaScript & _the event loop_</span>
 
 [Back to Contents](#contents)
 
 - **Asynchronous programming** is defined as "A technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished. Once that task has finished, your program is presented with the result." in [_MDN_](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing#:~:text=Asynchronous%20programming%20is%20a,presented%20with%20the%20result.).
-  - Callback functions, event handlers, interacting with APIs are the examples of Asynchronous Javascript.
-- Normally, Javascript is a synchronous language. However, with the power of the concepts above we can run our code asynchronously. But how is it working?
+
+  - Callback functions, event handlers, interacting with APIs are the examples of Asynchronous JavaScript.
+
+- Normally, JavaScript is a synchronous language. However, with the power of the concepts above we can run our code asynchronously. But how is it working?
+
 - There is a built-in mechanism called the **Event Loop**, which handles the execution of multiple chunks of your program over time, each time invoking the JS Engine.
 
   - There is also **Callback Queue** or **Macrotask Queue** where your asynchronous code gets pushed to, and waits for the execution. [_Ref_](https://medium.com/@Rahulx1/understanding-event-loop-call-stack-event-job-queue-in-javascript-63dcd2c71ecd)
+
   - The Event Loop has one simple job — to monitor the **Call Stack** and the **Callback Queue**. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop. Each event is just a function callback. [_Ref_](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)
 
   ```js
   function greet() {
-  	return 'Hello';
+    return 'Hello';
   }
 
   function yell() {
-  	return 'HEY!';
+    return 'HEY!';
   }
 
   setTimeout(yell, 0);
@@ -165,6 +170,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
   ```
 
 - The visualization of the **Event Loop**
+
   ![event loop in js](./assets/images/event_loop.png 'Event Loop in JS')
 
 ---
@@ -174,9 +180,12 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 [Back to Contents](#contents)
 
 - With ES6, **Promises** came into our lives. It is the ideal choice compared to callbacks or event handlers for handling asynchronous operations.
-- Promises are special objects built into Javascript that get returned immediately when we make a call to a Web API _(e.g. fetch)_. They act like a placeholder for the data we expect to get from the browser. Also has a feature that allows us to run any code we want to run when the returned data saved on the promise object: `.then(myFunction)`. The promise object automatically triggers the `myFunction` when the data is fetched for example.
+
+- Promises are special objects built into JavaScript that get returned immediately when we make a call to a Web API _(e.g. fetch)_. They act like a placeholder for the data we expect to get from the browser. Also has a feature that allows us to run any code we want to run when the returned data saved on the promise object: `.then(myFunction)`. The promise object automatically triggers the `myFunction` when the data is fetched for example.
+
 - We should point out that exactly when the function that passed in to promise is going to run. We talked about the **Event Loop**, **Call Stack** and **Callback Queue/Macrotask Queue**. There is one more queue that we need to understand: **Microtask Queue**.
-- We know that the asynchronous codes get pushed to Callback Queue. Just like that, Javascript Promises get pushed into the Microtask Queue and the event loop always prioritize the Microtask Queue. It does not start the tasks in Callback Queue until every task in the Microtask Queue is ran.
+
+- We know that the asynchronous codes get pushed to Callback Queue. Just like that, JavaScript Promises get pushed into the Microtask Queue and the event loop always prioritize the Microtask Queue. It does not start the tasks in Callback Queue until every task in the Microtask Queue is ran.
 
   ```js
   function display(data) {
@@ -192,7 +201,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
   setTimeout(printHello, 0); // Pushed into Callback Queue
 
   const futureData = fetch('https://twitter.com/will/tweets/1'); // Created a placeholder in the memory
-  futureData.then(display); // Passed the 'display' function to run when the data returne
+  futureData.then(display); // Passed the 'display' function to run when the data returns
   // The key here is that
   // the function does not get pushed into microtask queue when it is passed in to promise
   // but when the data returned from the API
@@ -214,6 +223,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
   ```
 
 - Visualization of the **Callback/Macrotask Queue** and **Microtask Queue**
+
   ![callback queue and microtask queue in js](./assets/images/queues_in_depth.gif 'Queues in event loop in JS')
 
 ---
@@ -222,7 +232,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 [Back to Contents](#contents)
 
-- **Class** keyword is just a syntactic sugar in Javascript. There is no difference under the hood between the function and the class below.
+- **Class** keyword is just a syntactic sugar in JavaScript. There is no difference under the hood between the function and the class below.
 
   ```js
   function UserCreatorFunc(name) {
@@ -250,10 +260,10 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
   user2.introduce(); // "My name is Jack"
   ```
 
-- **new** keyword in JavaScript is used to create an instance of an object that has a constructor function. On calling the constructor function with ‘new’ operator, the following actions are taken:
+- **`new`** keyword in JavaScript is used to create an instance of an object that has a constructor function. On calling the constructor function with ‘new’ operator, the following actions are taken:
   - A new empty object is created.
-  - The new object’s internal ‘Prototype’ property (\_\_proto\_\_) is set the same as the prototype of the constructing function.
-  - The ‘this’ variable is made to point to the newly created object. It binds the property which is declared with ‘this’ keyword to the new object.
-  - A newly created object is returned when the constructor function returns a non-primitive value (custom JavaScript object). If the constructor function returns a primitive value, it will be ignored. At the end of the function, ‘this’ is returned if there is no return statement in the function body. [_Ref_](https://www.geeksforgeeks.org/javascript-new-keyword/#:~:text=New%20keyword%20in,the%20function%20body.)
+  - The new object’s internal `prototype` property (`__proto__`) is set the same as the prototype of the constructing function.
+  - The `this` variable is made to point to the newly created object. It binds the property which is declared with `this` keyword to the new object.
+  - A newly created object is returned when the constructor function returns a non-primitive value (custom JavaScript object). If the constructor function returns a primitive value, it will be ignored. At the end of the function, `this` is returned if there is no return statement in the function body. [_Ref_](https://www.geeksforgeeks.org/javascript-new-keyword/#:~:text=New%20keyword%20in,the%20function%20body.)
 
 ---
