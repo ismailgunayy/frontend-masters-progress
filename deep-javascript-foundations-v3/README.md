@@ -268,7 +268,11 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 [Back to Contents](#contents)
 
-- List Item 1
+- **What is closure?**
+  - Closure is when a function <u>remembers</u> its lexical scope even when the function is executed outside that lexical scope
+
+  - Closure is a preservation of the linkage to a variable, not the capturing of the value
+
 
 ---
 

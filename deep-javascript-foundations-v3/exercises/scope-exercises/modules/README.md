@@ -4,7 +4,7 @@ In this exercise, you will refactor some code that manages student enrollment re
 
 ## Instructions
 
-1. Wrap all of the functions in a module factory (ie, function named `defineWorkshop()`). This function should make a return a public API object.
+1. Wrap all of the functions in a module factory (ie, function named `defineWorkshop()`). This function should make a return public API object.
 
 2. The returned public API object should include the following methods:
 
