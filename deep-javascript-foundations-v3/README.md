@@ -246,7 +246,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
       ```js
       console.log(teacher); // undefined
-      var teacher = 'Kyle';
+      var teacher = "Kyle";
       ```
 
     - When you use `let` or `const` keyword, the program still knows there is a variable called _teacher_ in the scope, but the variable remains **uninitialized**
@@ -254,7 +254,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
       In this example, we normally expect the string `'Kyle'` in the console. However, what we get is a `ReferenceError` which is a proof that `let` or `const` also hoists, albeit in a different way.
 
       ```js
-      var teacher = 'Kyle';
+      var teacher = "Kyle";
 
       {
       	console.log(teacher); // ReferenceError: Cannot access 'teacher' before initialization
@@ -269,10 +269,10 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 [Back to Contents](#contents)
 
 - **What is closure?**
+
   - Closure is when a function <u>remembers</u> its lexical scope even when the function is executed outside that lexical scope
 
   - Closure is a preservation of the linkage to a variable, not the capturing of the value
-
 
 ---
 
@@ -280,7 +280,143 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 [Back to Contents](#contents)
 
-- List Item 1
+- **this** keyword
+
+  - A function's `this` references the execution context for that call, determined entirely by <u>how the function was called</u>
+
+    ```js
+    var teacher = "Kyle";
+
+    function ask(question) {
+    	console.log(teacher, question);
+    }
+
+    function otherClass() {
+    	var teacher = "Suzy";
+    	ask("Why?");
+    }
+
+    otherClass(); // Kyle Why?
+    ```
+
+    ```js
+    function ask(question) {
+    	console.log(this.teacher, question);
+    }
+
+    function otherClass() {
+    	var myContext = {
+    		teacher: "Suzy",
+    	};
+    	ask.call(myContext, "Why?"); // gives the function a 'this' context
+    }
+
+    otherClass(); // Suzy Why?
+    ```
+
+- There are 4 ways to invoke a function
+
+  - **Implicit Binding**
+
+    - When we invoke a method of an object, we use the dot(.) notation to access it. In implicit binding, you need to check the object adjacent to the method at the invocation time. This determines what this is binding to. [Ref](<https://www.freecodecamp.org/news/javascript-this-keyword-binding-rules/#:~:text=When%20we%20invoke%20a%20method%20of%20an%20object%2C%20we%20use%20the%20dot(.)%20notation%20to%20access%20it.%20In%20implicit%20binding%2C%20you%20need%20to%20check%20the%20object%20adjacent%20to%20the%20method%20at%20the%20invocation%20time.%20This%20determines%20what%20this%20is%20binding%20to>)
+
+      ```js
+      function ask(question) {
+      	console.log(this.teacher, question);
+      }
+
+      var workshop = {
+      	teacher: "Kyle",
+      	ask,
+      };
+
+      workshop.ask("What is implicit binding?"); // Kyle What is implicit binding?
+      ```
+
+  - **Explicit Binding**
+
+    - In explicit binding, we can call a function with an object when the function is outside of the execution context of the object. [Ref](https://www.freecodecamp.org/news/javascript-this-keyword-binding-rules/#:~:text=In%20explicit%20binding%2C%20we%20can%20call%20a%20function%20with%20an%20object%20when%20the%20function%20is%20outside%20of%20the%20execution%20context%20of%20the%20object.)
+
+    - Most of the time, we have to choose between flexibility or predictability
+
+      - Flexibility
+
+        ```js
+        function ask(question) {
+        	console.log(this.teacher, question);
+        }
+
+        var workshop1 = {
+        	teacher: "Kyle",
+        };
+
+        var workshop2 = {
+        	teacher: "Suzy",
+        };
+
+        ask.call(workshop1, "Can I explicitly set context?");
+
+        ask.call(workshop2, "Can I explicitly set context?");
+        ```
+
+      - Predictability (_Hard Binding_)
+
+        ```js
+        var workshop = {
+        	teacher: "Kyle",
+        	ask(question) {
+        		console.log(this.teacher, question);
+        	},
+        };
+
+        setTimeout(workshop.ask, 10, "Lost this"); // undefined Lost this?
+
+        setTimeout(workshop.ask.bind(workshop), 10, "Hard bound this?"); // Kyle Hard bound this?
+        ```
+
+  - **new** keyword Binding
+
+    - There are 4 thing that `new` keyword does under the hood
+
+      - Creates a brand new empty object
+      - Links that object to another object
+      - Call function with `this` set to the new object
+      - If function does not return an object, `new` keyword assumes return of `this` object
+
+  - **Default Binding**
+
+    - If the this keyword is not resolved with any of the bindings, implicit, explicit or new, then the this is bound to the window(global) object. [Ref](<https://www.freecodecamp.org/news/javascript-this-keyword-binding-rules/#:~:text=If%20the%20this%20keyword%20is%20not%20resolved%20with%20any%20of%20the%20bindings%2C%20implicit%2C%20explicit%20or%20new%2C%20then%20the%20this%20is%20bound%20to%20the%20window(global)%20object.>)
+
+    - It is a fallback binding
+
+    - This binding happens only in sloppy mode. In strict mode, if you want to access `this`, `undefined` is returned. If you try to access a property of `this` like `this.teacher`, you encounter with a `TypeError`
+
+- Binding Precedence
+
+  - Ask these 4 questions
+
+    - Is the function called by `new`? - _Binding with `new` keyword_
+
+      - If so, the newly created object will be the `this` keyword
+
+    - Is the function called by `call` or `apply` (`bind` effectively uses `apply`) - _Explicit Binding_
+
+      - If so, the context object that is specified will be the `this` keyword
+
+    - Is the function called on a context object? - _Implicit Binding_
+
+      - If so, the context object will be the `this` keyword
+
+    - Default Binding
+      - Global object will be the `this` keyword (except strict mode)
+
+- **Arrow Functions & Lexical 'this'**
+
+  - An arrow function **does not define** a `this` keyword at all. it behaves exactly like any other variable which means it lexically resolves to some enclosing scope that does define of `this`
+
+  - If you have five nested arrow functions, it goes up until it finds a scope that defines `this`
+
+  - Spec says '_An ArrowFunction does not define local bindings for arguments, super, this, or new.target. Any reference to arguments, super, this, or new.target within an ArrowFunction must resolve to a binding in a lexically enclosing environment._'
 
 ---
 
