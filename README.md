@@ -57,7 +57,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 - [x] [JavaScript: The Hard Parts, v2](/javascript-the-hard-parts-v2)
 - [x] [Deep JavaScript Foundations, v3](/deep-javascript-foundations-v3/)
-- [ ] Complete Intro to React, v7
+- [ ] [Complete Intro to React, v7](/complete-intro-to-react-v7/)
 - [ ] Web Performance Fundamentals
 - [ ] CSS Grid & Flexbox for Responsive Layouts, v2
 - [ ] Full Stack for Front-End Engineers, v2
@@ -221,7 +221,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 [Back to Top](#top)
 
-- [ ] Complete Intro to React, v7
+- [ ] [Complete Intro to React, v7](/complete-intro-to-react-v7/)
 - [ ] Intermediate React, v4
 - [ ] State Management in Pure React, v2
 
