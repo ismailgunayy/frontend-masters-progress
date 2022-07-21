@@ -6,6 +6,12 @@ Learn to build real-world applications using modern React! Much more than an int
 
 ---
 
+## Resources
+
+- [Link](https://btholt.github.io/complete-intro-to-react-v7/)
+
+---
+
 ## Contents
 
 - [Introduction](#introduction)
