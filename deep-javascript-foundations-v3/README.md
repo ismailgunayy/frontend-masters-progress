@@ -153,7 +153,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 - **Static Typing** is
 
-  - _'A programming language characteristic in which variable types are explicitly declared and thus are determined at compile time. This lets the compiler decide whether a given variable can perform the actions requested from it or not.'_ [Ref](https://www.techopedia.com/definition/22321/statically-typed#:~:text=Statically%20typed%20is%20a%20programming%20language%20characteristic%20in%20which%20variable%20types%20are%20explicitly%20declared%20and%20thus%20are%20determined%20at%20compile%20time.%20This%20lets%20the%20compiler%20decide%20whether%20a%20given%20variable%20can%20perform%20the%20actions%20requested%20from%20it%20or%20not.)
+  - _'A programming language characteristic in which variable types are explicitly declared and thus are determined at compile time. This lets the compiler decide whether a given variable can perform the actions requested from it or not.'_ [Ref](https://www.techopedia.com/definition/22321/statically-typed#:~:text=Statically%20typed%20is%20a%20programming%20language%20characteristic%20in%20which%20variable%20types%20are%20explicitly%20declared%20and%20thus%20are%20determined%20at%20compile%20time.%20This%20lets%20the%20compiler%20decide%20whether%20a%20given%20variable%20can%20perform%20the%20actions%20requested%20from%20it%20or%20not)
 
 - _Pros_ of Static Typing
 
@@ -238,7 +238,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 - **Hoisting**
 
-  - MDN says '_JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code. Hoisting allows functions to be safely used in code before they are declared._' [Ref](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting#:~:text=JavaScript%20Hoisting%20refers,they%20are%20declared.)
+  - MDN says '_JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code. Hoisting allows functions to be safely used in code before they are declared._' [Ref](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting#:~:text=JavaScript%20Hoisting%20refers,they%20are%20declared)
 
   - **~~let doesn't hoist~~**
 
@@ -335,7 +335,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
   - **Explicit Binding**
 
-    - In explicit binding, we can call a function with an object when the function is outside of the execution context of the object. [Ref](https://www.freecodecamp.org/news/javascript-this-keyword-binding-rules/#:~:text=In%20explicit%20binding%2C%20we%20can%20call%20a%20function%20with%20an%20object%20when%20the%20function%20is%20outside%20of%20the%20execution%20context%20of%20the%20object.)
+    - In explicit binding, we can call a function with an object when the function is outside of the execution context of the object. [Ref](https://www.freecodecamp.org/news/javascript-this-keyword-binding-rules/#:~:text=In%20explicit%20binding%2C%20we%20can%20call%20a%20function%20with%20an%20object%20when%20the%20function%20is%20outside%20of%20the%20execution%20context%20of%20the%20object)
 
     - Most of the time, we have to choose between flexibility or predictability
 
@@ -376,7 +376,7 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
   - **new** keyword Binding
 
-    - There are 4 thing that `new` keyword does under the hood
+    - There are 4 things that `new` keyword does under the hood
 
       - Creates a brand new empty object
       - Links that object to another object
@@ -424,6 +424,63 @@ Dive into the core pillars of the JavaScript language with Kyle Simpson, author 
 
 [Back to Contents](#contents)
 
-- List Item 1
+- Objects are built by _constructor calls_ (via `new`)
+
+  - A _constructor call_ makes an object linked to its own prototype
+
+- **The key about class system is**
+
+  - Most of the other languages creates a copy, which is called instance, of the defined pattern (class) while JavaScript just links the objects to the prototypes
+
+- **Behavior Delegation** vs **Inheritance**
+
+  - Since the inheritance system in JS is not the same as it is in the most languages, it'd be better to call it Behavior Delegation.
+  - Behavior Delegation leverages JavaScript’s prototype mechanism (linking objects to other objects) which lets some object provide a delegation to common utility objects for property or method references if not found on the object itself. This is very different from the traditional object-oriented design pattern. [Ref](https://genekuo.medium.com/javascript-object-modelling-with-behavior-delegation-8be99da48432#:~:text=Behavior%20Delegation%20leverages,oriented%20design%20pattern)
+
+- **class** as a syntactic sugar
+  - The following code block...
+    ```js
+    class Workshop {
+      constructor(teacher) {
+        this.teacher = teacher;
+      }
+
+      ask(question) {
+        console.log(this.teacher, question);
+      }
+    }
+
+    class AnotherWorkshop extends Workshop {
+      speakUp(msg) {
+        this.ask(msg.toUpperCase());
+      }
+    }
+
+    var JSRecentParts = new AnotherWorkshop("Kyle");
+    JSRecentParts.speakUp("Are classes getting better?"); // Kyle ARE CLASSES GETTING BETTER?
+    ```
+
+    ...is run like this under the hood
+    ```js
+    function Workshop(teacher) {
+      this.teacher = teacher;
+    }
+
+    Workshop.prototype.ask = function (question) {
+      console.log(this.teacher, question);
+    };
+
+    function AnotherWorkshop(teacher) {
+      Workshop.call(this, teacher);
+    }
+
+    AnotherWorkshop.prototype = Object.create(Workshop.prototype);
+    AnotherWorkshop.prototype.speakUp = function (msg) {
+      this.ask(msg.toUpperCase());
+    };
+
+    var JSRecentParts = new AnotherWorkshop("Kyle");
+    JSRecentParts.speakUp("Are classes getting better?"); // Kyle ARE CLASSES GETTING BETTER?
+    ```
 
 ---

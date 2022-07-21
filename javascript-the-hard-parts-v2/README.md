@@ -26,7 +26,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 - JavaScript keeps track of what function is currently running and what functions are called from within that function. This is called **Call Stack**. At the bottom of this stack, there is always the **main/global** function call.
 
-  ![call stack in js](./assets/images/call_stack.jpg 'Call Stack in JS')
+  ![call stack in js](./assets/images/call_stack.jpg "Call Stack in JS")
 
 ---
 
@@ -58,11 +58,11 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
   ```js
   function checkButtonClicked() {
-  	console.log('Clicked');
+  	console.log("Clicked");
   }
 
-  const button = document.getElementById('button');
-  button.addEventListener('click', checkButtonClicked);
+  const button = document.getElementById("button");
+  button.addEventListener("click", checkButtonClicked);
   ```
 
 <br/>
@@ -124,7 +124,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
   ```js
   // file2.js
-  import test from './file1.js';
+  import test from "./file1.js";
 
   console.log(value); // 0
   test(); // 1 - The function will log the value because it is told to
@@ -154,11 +154,11 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
   ```js
   function greet() {
-    return 'Hello';
+  	return "Hello";
   }
 
   function yell() {
-    return 'HEY!';
+  	return "HEY!";
   }
 
   setTimeout(yell, 0);
@@ -171,7 +171,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 - The visualization of the **Event Loop**
 
-  ![event loop in js](./assets/images/event_loop.png 'Event Loop in JS')
+  ![event loop in js](./assets/images/event_loop.png "Event Loop in JS")
 
 ---
 
@@ -192,7 +192,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
   	console.log(data);
   }
   function printHello() {
-  	console.log('Hello');
+  	console.log("Hello");
   }
   function blockFor300ms() {
   	/* console.log('block!') for 300ms */
@@ -200,14 +200,14 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
   setTimeout(printHello, 0); // Pushed into Callback Queue
 
-  const futureData = fetch('https://twitter.com/will/tweets/1'); // Created a placeholder in the memory
+  const futureData = fetch("https://twitter.com/will/tweets/1"); // Created a placeholder in the memory
   futureData.then(display); // Passed the 'display' function to run when the data returns
   // The key here is that
   // the function does not get pushed into microtask queue when it is passed in to promise
   // but when the data returned from the API
 
   blockFor300ms(); // Blocks the thread for 300 milliseconds.
-  console.log('Me first!');
+  console.log("Me first!");
 
   // EXECUTION ORDER
 
@@ -224,7 +224,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 - Visualization of the **Callback/Macrotask Queue** and **Microtask Queue**
 
-  ![callback queue and microtask queue in js](./assets/images/queues_in_depth.gif 'Queues in event loop in JS')
+  ![callback queue and microtask queue in js](./assets/images/queues_in_depth.gif "Queues in event loop in JS")
 
 ---
 
@@ -243,7 +243,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
   	};
   }
 
-  const user1 = new UserCreatorFunc('Jack');
+  const user1 = new UserCreatorFunc("Jack");
   user1.introduce(); // "My name is Jack"
 
   class UserClass {
@@ -256,14 +256,44 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
   	}
   }
 
-  const user2 = new UserClass('Jack');
+  const user2 = new UserClass("Jack");
   user2.introduce(); // "My name is Jack"
   ```
 
 - **`new`** keyword in JavaScript is used to create an instance of an object that has a constructor function. On calling the constructor function with ‘new’ operator, the following actions are taken:
+
   - A new empty object is created.
   - The new object’s internal `prototype` property (`__proto__`) is set the same as the prototype of the constructing function.
   - The `this` variable is made to point to the newly created object. It binds the property which is declared with `this` keyword to the new object.
   - A newly created object is returned when the constructor function returns a non-primitive value (custom JavaScript object). If the constructor function returns a primitive value, it will be ignored. At the end of the function, `this` is returned if there is no return statement in the function body. [_Ref_](https://www.geeksforgeeks.org/javascript-new-keyword/#:~:text=New%20keyword%20in,the%20function%20body.)
+
+  ```js
+  function Person(name, age) {
+  	this.name = name;
+  	this.age = age;
+  }
+
+  Person.prototype.introduce = function () {
+  	console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old`);
+  };
+
+  function newKeyword(constructorFunction, arguments = []) {
+  	// Creates a brand new object and
+  	// link the object to constructor function
+  	var obj = Object.create(Person.prototype);
+
+  	// Constructor function is called with the context of `this`
+  	constructorFunction.call(obj, ...arguments);
+
+  	// Newly created object is returned
+  	return obj;
+  }
+
+  var person1 = new Person("Ismail", 23);
+  var person2 = newKeyword(Person, ["Ismail", 23]);
+
+  person1.introduce(); // Hi, I'm Ismail and I'm 23 years old
+  person2.introduce(); // Hi, I'm Ismail and I'm 23 years old
+  ```
 
 ---
