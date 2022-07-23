@@ -8,7 +8,7 @@ A deep dive into JavaScript and functional programming techniques, this course i
 
 ## Resources
 
-- [Link 1](https://slides.com/bgando/f2f-final-day-1)
-- [Link 2](https://slides.com/bgando/f2f-final-day-2)
+- [Slides - Part 1](https://slides.com/bgando/f2f-final-day-1)
+- [Slides - Part 2](https://slides.com/bgando/f2f-final-day-2)
 
 ---

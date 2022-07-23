@@ -8,7 +8,7 @@ Go under the hood of some of the most important aspects of JavaScript! You'll le
 
 ## Resources
 
-- [Link](https://static.frontendmasters.com/resources/2019-09-18-javascript-hard-parts-v2/javascript-hard-parts-v2.pdf)
+- [Slides](https://static.frontendmasters.com/resources/2019-09-18-javascript-hard-parts-v2/javascript-hard-parts-v2.pdf)
 
 ---
 

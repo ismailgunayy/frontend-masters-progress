@@ -1,16 +1,18 @@
 # [Complete Intro to React, v7 by Brian Holt](https://frontendmasters.com/courses/complete-react-v7/)
 
+
 ## Description
 
 Learn to build real-world applications using modern React! Much more than an intro, you’ll start from the ground up, getting to using the latest features in React, including hooks, effects, context, and portals. Throughout the course, you’ll piece together tools from the entire React ecosystem (like Parcel, ESLint, TailwindCSS, and React Router) to build a complete application to browse adoptable pets!
 
----
+## Notes
+
+This course is mostly on practices. There is no much information or discussion on concepts. That's why I didn't took any notes.
 
 ## Resources
 
-- [Link](https://btholt.github.io/complete-intro-to-react-v7/)
-
----
+- [Website](https://btholt.github.io/complete-intro-to-react-v7/)
+- [Project Repository](https://github.com/btholt/citr-v7-project)
 
 ## Contents
 
@@ -27,7 +29,7 @@ Learn to build real-world applications using modern React! Much more than an int
 
 [Back to Contents](#contents)
 
-- List Item
+- null
 
 ---
 
@@ -35,7 +37,7 @@ Learn to build real-world applications using modern React! Much more than an int
 
 [Back to Contents](#contents)
 
-- List Item
+- null
 
 ---
 
@@ -43,7 +45,13 @@ Learn to build real-world applications using modern React! Much more than an int
 
 [Back to Contents](#contents)
 
-- List Item
+- npm
+- [prettier](https://prettier.io/docs/en/options.html)
+- [ESLint](https://eslint.org/docs/latest/rules/)
+- Git
+- [Parcel](https://parceljs.org/)
+- Bundlers
+- [Browserslist](https://browserslist.dev)
 
 ---
 
@@ -51,7 +59,7 @@ Learn to build real-world applications using modern React! Much more than an int
 
 [Back to Contents](#contents)
 
-- List Item
+- null
 
 ---
 
@@ -59,7 +67,7 @@ Learn to build real-world applications using modern React! Much more than an int
 
 [Back to Contents](#contents)
 
-- List Item
+- null
 
 ---
 
@@ -67,6 +75,6 @@ Learn to build real-world applications using modern React! Much more than an int
 
 [Back to Contents](#contents)
 
-- List Item
+- null
 
 ---

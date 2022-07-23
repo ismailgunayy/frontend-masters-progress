@@ -8,6 +8,6 @@ More than an introduction, in this course you’ll go from building your first w
 
 ## Resources
 
-- [Link](https://btholt.github.io/intro-to-web-dev-v2/)
+- [Website](https://btholt.github.io/intro-to-web-dev-v2/)
 
 ---

@@ -8,6 +8,6 @@ Get to know CSS in the right way without the fluff. You'll style text, build nav
 
 ## Resources
 
-- [Link](https://gettingstartedwith.css.education/)
+- [Website](https://gettingstartedwith.css.education/)
 
 ---

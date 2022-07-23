@@ -8,6 +8,6 @@ Want to learn to code using JavaScript? This is a great place to start! In this 
 
 ## Resources
 
-- [Link](https://static.frontendmasters.com/resources/2019-05-08-getting-into-javascript/getting-into-javascript.pdf)
+- [Slides](https://static.frontendmasters.com/resources/2019-05-08-getting-into-javascript/getting-into-javascript.pdf)
 
 ---
