@@ -3,3 +3,9 @@ node_modules
 *.log
 build/
 playground.js
+.parcel-cache/
+dist/
+.env
+.DS_Store
+coverage/
+.vscode
