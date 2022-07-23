@@ -28,7 +28,9 @@ null
 
 [Back to Contents](#contents)
 
-- null
+- Superset of JS and also compiles to readable JS
+- Potential to move some kinds of errors from runtime to compile time, early spotting bugs-
+- Popular
 
 ---
 
@@ -36,7 +38,34 @@ null
 
 [Back to Contents](#contents)
 
-- null
+- TS variables are **born** with their types
+
+  ```ts
+  const a = 5; // a: number
+  const b = 5; // b: 5 (Literal Types)
+  ```
+
+- **any** is a flexible type just like the variables in JavaScript. However, we aim for type safety int TS. That's why, we add a _type annotation_
+
+  ```ts
+  let startTime = new Date();
+  let endTime: // any
+
+  let startTime = new Date();
+  let endTime: Date
+  ```
+
+  ```ts
+  function add(a, b) {
+  	return a + b; // are these numbers or strings or booleans?
+  }
+
+  function add(a: number, b: number): number {
+  	return a + b;
+  }
+
+  add(3, "5"); // Argument of type 'string' is not assignable to parameter of type 'number'
+  ```
 
 ---
 
