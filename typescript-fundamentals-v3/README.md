@@ -203,18 +203,18 @@ null
 
     - Even though the function is defined as expecting a 'Car' object, you can pass different objects which shape is exactly the same as 'Car' objects.
 
-    ```ts
-    const vehicle = {
-    	make: "Honda",
-    	model: "Accord",
-    	year: 2017,
-    };
+      ```ts
+      const vehicle = {
+      	make: "Honda",
+      	model: "Accord",
+      	year: 2017,
+      };
 
-    function printCar(car: { make: string; model: string; year: number }) {
-    	console.log(`${car.make} ${car.model} (${car.year})`);
-    }
-    printCar(vehicle); // Totally fine
-    ```
+      function printCar(car: { make: string; model: string; year: number }) {
+      	console.log(`${car.make} ${car.model} (${car.year})`);
+      }
+      printCar(vehicle); // Totally fine
+      ```
 
 - Union and Intersection Types
 
