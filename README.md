@@ -259,7 +259,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 [Back to Top](#top)
 
 - [x] [TypeScript Fundamentals, v3](/typescript-fundamentals-v3/)
-- [ ] Intermediate TypeScript
+- [ ] [Intermediate TypeScript](/intermediate-typescript/)
 - [ ] Making TypeScript Stick
 - [ ] Production-Grade TypeScript
 
