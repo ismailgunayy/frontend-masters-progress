@@ -10,7 +10,7 @@ null
 
 ## Resources
 
-- [Website](https://www.typescript-training.com/course/fundamentals-v3)
+- [Course Website](https://www.typescript-training.com/course/fundamentals-v3)
 - [Course Repository](https://github.com/mike-north/ts-fundamentals-v3)
 
 ## Contents
