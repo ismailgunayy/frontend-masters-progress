@@ -359,6 +359,7 @@ null
   ```
 
 - Function Overloads
+
   ```ts
   function makeDate(timestamp: number): Date;
   function makeDate(m: number, d: number, y: number): Date;
@@ -372,6 +373,26 @@ null
   const d1 = makeDate(12345678);
   const d2 = makeDate(5, 5, 5);
   ```
+
+- Classes
+
+  - Access modifiers are available in TS (_public_, _protected_ and _private_)
+  - The shorthand that can be used only with access modifiers
+
+    ```ts
+    // Verbose
+    class Car {
+    	make: string;
+    	constructor(make: string) {
+    		this.make = make;
+    	}
+    }
+
+    // Succinct
+    class Car {
+    	constructor(make: string) {}
+    }
+    ```
 
 ---
 
@@ -392,33 +413,145 @@ null
 - **Bottom Types**
 
   - A bottom type is a type that describes no possible value allowed by the system
+  - **never**
 
     - Exhaustive conditionals - `never` is used for checking that if all the conditions are handled
 
+      ```ts
+      class Car {
+      	drive() {
+      		console.log("vroom");
+      	}
+      }
+      class Truck {
+      	tow() {
+      		console.log("dragging something");
+      	}
+      }
+      type Vehicle = Truck | Car;
+
+      let myVehicle: Vehicle = obtainRandomVehicle();
+
+      // The exhaustive conditional
+      if (myVehicle instanceof Truck) {
+      	myVehicle.tow(); // Truck
+      } else if (myVehicle instanceof Car) {
+      	myVehicle.drive(); // Car
+      } else {
+      	const neverValue: never = myVehicle;
+      }
+      ```
+
+- Type Guards & Narrowing
+
+  - Built-in type guards are basically if conditions that checked the type of variable and _narrows_ the variable inside of that block scope. That means if the type of the variable checked and narrowed, methods or properties specific to that type are suggested by autocompletion
+
     ```ts
-    class Car {
-    	drive() {
-    		console.log("vroom");
-    	}
-    }
-    class Truck {
-    	tow() {
-    		console.log("dragging something");
-    	}
-    }
-    type Vehicle = Truck | Car;
+    let value: number | string | { dateRange: [Date, Date] };
 
-    let myVehicle: Vehicle = obtainRandomVehicle();
+    if (typeof value == "number") {
+    	value; // value: number
+    }
 
-    // The exhaustive conditional
-    if (myVehicle instanceof Truck) {
-    	myVehicle.tow(); // Truck
-    } else if (myVehicle instanceof Car) {
-    	myVehicle.drive(); // Car
-    } else {
-    	const neverValue: never = myVehicle;
+    elseif (typeof value == "string") {
+    	value; // value: string
+    }
+
+    else if ("dateRange" in value) {
+      value; // value: { dateRange: [Date, Date]; }
     }
     ```
+
+  - User-defined type guards
+
+    - Using `is` keyword
+
+      ```ts
+      interface Person {
+      	name: string;
+      }
+
+      let maybePerson;
+
+      function isPerson(valueToTest: any): valueToTest is Person {
+      	return (
+      		valueToTest &&
+      		typeof valueToTest == "object" &&
+      		"name" in valueToTest &&
+      		typeof valueToTest["name"] == "string"
+      	);
+      }
+
+      if (isPerson(maybePerson)) {
+      	maybePerson;
+      }
+      ```
+
+    - Using assertion
+
+      ```ts
+      interface Person {
+      	name: string;
+      }
+
+      let maybePerson;
+
+      function assertIsPerson(valueToTest: any): asserts valueToTest is Person {
+      	if (
+      		!(
+      			valueToTest &&
+      			typeof valueToTest == "object" &&
+      			"name" in valueToTest &&
+      			typeof valueToTest["name"] == "string"
+      		)
+      	) {
+      		throw new Error("Value does not appear to be a Person");
+      	}
+      }
+
+      assertIsPerson(maybePerson); // Will throw an error
+      ```
+
+- Nullish Values
+
+  - Non-null assertion operator `!`
+
+    - This operator only makes TypeScript to ignore the possibility of value to be `null` or `undefined`. However, the value may still be `null` or `undefined`
+
+      ```ts
+      type GroceryCart = {
+      	fruits?: string[];
+      	vegetables?: string[];
+      };
+
+      const cart: GroceryCart = {};
+
+      cart.fruits.push("apple"); // Object is possibly 'undefined'
+      cart.fruits!.push("banana"); // TS will assume the object is not 'undefined'
+      ```
+
+  - Definite assignment operator `!`
+
+    - This operator used to suppress TS's objections about a class field that is not initialized
+
+      ```ts
+      class Car {
+      	make: string;
+      	electricPower: number;
+      	// Property 'electricPower' has no initializer
+      	// and is not definitely assigned in the constructor.
+
+      	// Instead of above
+      	electricPower!: number;
+
+      	constructor(make: string, electricPower: number = 0) {
+      		this.make = make;
+      		if (electricPower != 0) {
+      			this.electricPower = electricPower;
+      		}
+      	}
+      }
+      ```
 
 ---
 
