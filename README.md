@@ -61,7 +61,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [ ] Web Performance Fundamentals
 - [ ] CSS Grid & Flexbox for Responsive Layouts, v2
 - [ ] Full Stack for Front-End Engineers, v2
-- [ ] [TypeScript Fundamentals, v3](/typescript-fundamentals-v3/)
+- [x] [TypeScript Fundamentals, v3](/typescript-fundamentals-v3/)
 - [ ] Functional JavaScript First Steps
 
 ##### Electives
@@ -164,7 +164,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 ##### Electives
 
-- [ ] [TypeScript Fundamentals, v3](/typescript-fundamentals-v3/)
+- [x] [TypeScript Fundamentals, v3](/typescript-fundamentals-v3/)
 - [ ] JavaScript Performance
 - [ ] The Hard Parts of Object Oriented JavaScript
 - [ ] JavaScript Testing Practices and Principles
@@ -258,7 +258,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 [Back to Top](#top)
 
-- [ ] [TypeScript Fundamentals, v3](/typescript-fundamentals-v3/)
+- [x] [TypeScript Fundamentals, v3](/typescript-fundamentals-v3/)
 - [ ] Intermediate TypeScript
 - [ ] Making TypeScript Stick
 - [ ] Production-Grade TypeScript
