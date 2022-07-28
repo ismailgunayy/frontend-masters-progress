@@ -155,7 +155,7 @@ null
     // Type 'number' is not assignable to type 'string'.
     ```
 
-    - Limitations
+    - As of TypeScript 4.3, there’s limited support for enforcing tuple length constraints.
 
       ```ts
       const numPair: [number, number] = [4, 5];
@@ -296,6 +296,11 @@ null
     	}
     }
     ```
+
+  - Type vs Interface
+    - If you need to define something other than an object type (e.g., use of the | union type operator), you must use a **type alias**
+    - If you need to define a type to use with the implements heritage term, it’s best to use an **interface**
+    - If you need to allow consumers of your types to augment them, you must use an **interface**.
 
 - Recursive Types
 

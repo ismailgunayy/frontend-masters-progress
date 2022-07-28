@@ -59,7 +59,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [x] [Deep JavaScript Foundations, v3](/deep-javascript-foundations-v3/)
 - [x] [Complete Intro to React, v7](/complete-intro-to-react-v7/)
 - [ ] Web Performance Fundamentals
-- [ ] CSS Grid & Flexbox for Responsive Layouts, v2
+- [ ] [CSS Grid & Flexbox for Responsive Layouts, v2](/css-grid-flexbox-for-responsive-layouts-v2)
 - [ ] Full Stack for Front-End Engineers, v2
 - [x] [TypeScript Fundamentals, v3](/typescript-fundamentals-v3/)
 - [ ] Functional JavaScript First Steps
@@ -178,7 +178,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 [Back to Top](#top)
 
 - [x] [Getting Started with CSS](/getting-started-with-css)
-- [ ] CSS Grid & Flexbox for Responsive Layouts, v2
+- [ ] [CSS Grid & Flexbox for Responsive Layouts, v2](/css-grid-flexbox-for-responsive-layouts-v2)
 - [ ] SVG Essentials & Animation, v2
 - [ ] Advanced CSS Layouts
 - [ ] Dynamic CSS with Custom Properties (aka CSS Variables)
@@ -259,8 +259,8 @@ I only added the courses and paths that I am interested in. To see all the conte
 [Back to Top](#top)
 
 - [x] [TypeScript Fundamentals, v3](/typescript-fundamentals-v3/)
-- [ ] [Intermediate TypeScript](/intermediate-typescript/)
-- [ ] Making TypeScript Stick
+- [x] [Intermediate TypeScript](/intermediate-typescript/)
+- [ ] [Making TypeScript Stick](/making-typescript-stick/)
 - [ ] Production-Grade TypeScript
 
 ##### Electives
