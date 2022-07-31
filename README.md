@@ -222,7 +222,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 [Back to Top](#top)
 
 - [x] [Complete Intro to React, v7](/complete-intro-to-react-v7/)
-- [ ] Intermediate React, v4
+- [x] [Intermediate React, v4](/intermediate-react-v4/)
 - [ ] State Management in Pure React, v2
 
 ##### Electives
@@ -267,7 +267,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 - [ ] React and TypeScript
 - [ ] JavaScript and TypeScript Monorepos
-- [ ] Intermediate React, v4
+- [x] [Intermediate React, v4](/intermediate-react-v4/)
 - [ ] Fullstack TypeScript (feat. GraphQL & Node.js)
 
 ---

@@ -6,7 +6,7 @@ Learn the essential CSS layout techniques for building responsive, beautiful web
 
 ## Notes
 
-null
+Course website is pretty good at providing resource. Probably, I will not take any notes
 
 ## Resources
 
