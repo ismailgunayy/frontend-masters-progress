@@ -68,7 +68,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 - [ ] Redux Fundamentals (feat. React)
 - [ ] Build Progressive Web Apps (PWAs) from Scratch
-- [ ] [Introduction to Next.js](/introduction-to-next-js/)
+- [x] [Introduction to Next.js](/introduction-to-next-js/)
 - [ ] Introduction to Gatsby, v2
 - [ ] Design for Developers
 - [ ] SVG Essentials & Animation, v2
@@ -138,7 +138,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 - [ ] Developer Productivity
 - [ ] Git In-depth
-- [ ] [Introduction to Next.js](/introduction-to-next-js/)
+- [x] [Introduction to Next.js](/introduction-to-next-js/)
 - [ ] Server-Side GraphQL in Node.js
 - [ ] JavaScript and TypeScript Monorepos
 - [ ] Introduction to Serverless Functions
@@ -210,7 +210,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 - [ ] Complete Intro to Real-Time
 - [ ] Introduction to MongoDB
-- [ ] [Introduction to Next.js](/introduction-to-next-js/)
+- [x] [Introduction to Next.js](/introduction-to-next-js/)
 - [ ] Production-Grade Next.js
 - [ ] JavaScript Testing Practices and Principles
 - [ ] Advanced GraphQL, v2
@@ -229,7 +229,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 
 - [ ] React and TypeScript
 - [ ] Redux Fundamentals (feat. React)
-- [ ] [Introduction to Next.js](/introduction-to-next-js/)
+- [x] [Introduction to Next.js](/introduction-to-next-js/)
 - [ ] Introduction to Gatsby, v2
 - [ ] Client-Side GraphQL in React
 - [ ] State Modeling in React with XState

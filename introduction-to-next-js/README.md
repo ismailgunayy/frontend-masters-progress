@@ -58,7 +58,7 @@ null
 
 [Back to Contents](#contents)
 
-- CSS
+- **CSS**
 
   - You may place your global css files into a 'styles' folder and import them into `pages/_app.jsx` only
 
@@ -71,7 +71,7 @@ null
 
 [Back to Contents](#contents)
 
-- API
+- **API**
 
   - This is one of the reasons why Next.js is called a full-stack framework: API Routing
 
@@ -102,7 +102,7 @@ null
     export default handler;
     ```
 
-- Data Fetching
+- **Data Fetching**
 
   - For fetching data ahead time, we have three options. All of these methods are for prerendering **pages** only, not components. By the way, these functions will only ever run in the server and won't even be bundled with the client code. This means you can handle some file system works or connect to a DB.
 
@@ -112,11 +112,65 @@ null
 
     - `getStaticPaths`
 
-      - If a page has dynamic routing and uses `getStaticProps`, it will also need `getStaticPaths` to prerender all the pages at build time into HTML
+      - If a page has dynamic routing and uses `getStaticProps`, it will also need `getStaticPaths` to prerender all the pages at build time into HTML.
 
     - `getServerSideProps`
 
       - This function will be called at runtime during every request. So unlike getStaticProps, you will have the runtime data like query params, HTTP headers, and the req and res objects from API handlers.
+
+- **Rendering Modes**
+
+  - Static Site Generation (_SSG_)
+
+    - HTML and CSS content is generated and also rendered at **build time**. It means that when the user requests for a page, the page is already rendered on the server at build time.
+    - Not suitable for dynamic data.
+
+  - Server-side Rendering (_SSR_)
+
+    - HTML and CSS is generated upon the client requests for the page, aka **runtime**. Unlike SSG, the page is rendered on the client.
+
+  - Client-side Rendering (_CSR_)
+
+    - When the client requests for the page, the server sends an empty HTML file only with links to the JS files. Then the browser fetches the JS files and the JS fills the page. Meanwhile, what we see is a blank white page.
+
+- **Working with SSR**
+
+  - Since the pages are generated at server, the things that must be done on the client side (e.g. DOM API) throw error. Luckily, Next.js has a built-in solution for this. **dynamic import** solves this problem. Actually this import method is not created only for this problem. In fact, it results lazy loading so that the operations that need a browser would not result in throwing an error.
+
+    ```js
+    "component.jsx";
+
+    const Test = () => {
+      return <div>{window.location.href}</div>;
+    };
+
+    export default Test;
+    ```
+
+    ```js
+    "somePage.jsx";
+
+    import dynamic from "next/dynamic";
+
+    const DynamicTest = dynamic(() => import("../src/components/test"), {
+      ssr: false,
+    });
+
+    const Page = (props) => {
+      return (
+        <div>
+          <DynamicTest />
+          ...
+        </div>
+      );
+    };
+
+    export default Page;
+
+    export function getServerSideProps(ctx) {
+      ...
+    }
+    ```
 
 ---
 
@@ -124,6 +178,7 @@ null
 
 [Back to Contents](#contents)
 
-- null
+- Next.js needs an environment that has Node.js in it because of API routes, server side rendering etc.
+- Vercel is advised :)
 
 ---
