@@ -156,7 +156,7 @@ I only added the courses and paths that I am interested in. To see all the conte
 - [x] [JavaScript: From Fundamentals to Functional JS, v2](/javascript-from-fundamentals-to-functional-js-v2)
 - [x] [JavaScript: The Hard Parts, v2](/javascript-the-hard-parts-v2)
 - [x] [Deep JavaScript Foundations, v3](/deep-javascript-foundations-v3/)
-- [ ] JavaScript: The Recent Parts
+- [ ] [JavaScript: The Recent Parts](/javascript-the-recent-parts/)
 - [ ] JavaScript: The New Hard Parts
 - [ ] Functional-Light JavaScript, v3
 - [ ] Hardcore Functional Programming in JavaScript, v2
