@@ -1,5 +1,7 @@
 # [TypeScript Fundamentals, v3 by Mike North](https://frontendmasters.com/courses/typescript-v3/)
 
+> **Completed**
+
 ## Description
 
 Use TypeScript to add strong typing to large JavaScript apps helps reduce bugs and keeps code performant and maintainable. Learn key Typescript features such as typing variables and function signatures, abstract classes, interfaces, enums, and more – these features increase your ability to fix errors fast. Learn how to migrate your codebase to TypeScript the smart way and improve productivity while building large-scale TypeScript applications with ease!

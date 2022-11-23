@@ -1,5 +1,7 @@
 # [Intermediate TypeScript by Mike North](https://frontendmasters.com/courses/intermediate-typescript/)
 
+> **Completed**
+
 ## Description
 
 Learn to type some of the more tricky TypeScript challenges found in large codebases, such as declaration files, generics, and transforming types. You’ll learn to keep yourself and your team unblocked by learning to diagnose common problems quickly. By taking this course, you'll grow from being a contributor to a TypeScript codebase to being on the path to becoming "the TypeScript expert" for your team.

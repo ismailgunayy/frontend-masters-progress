@@ -2,7 +2,7 @@
 
 <h5 style="margin-bottom: 5px">Disclaimer</h5>
 
-I only added the courses and paths that I am interested in. To see all the content, [visit the site](https://frontendmasters.com/). Also the notes that I took during the courses are exclusive to me. They are not created with the motivation of creating a resource for people.
+I only added the courses and paths that I am interested in. To see all the content, [visit the site](https://frontendmasters.com/). Also, the notes that I took during the courses are exclusive to me. They are not created with the motivation of creating a learning resource for people.
 
 ## Learning Paths
 

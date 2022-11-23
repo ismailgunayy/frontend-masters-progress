@@ -1,5 +1,7 @@
 # [Intermediate React, v4 by Brian Holt](https://frontendmasters.com/courses/intermediate-react-v4/)
 
+> **Completed**
+
 ## Description
 
 Learn to build scalable React applications using the latest tools and techniques available in the React ecosystem! This course is modular, where you can pick and choose various react ecosystems you want to learn. You’ll learn hooks in-depth, CSS-in-JS with TailwindCSS, increase performance with code splitting and server-side rendering, add TypeScript, state management with Redux, test your app with Jest …and more!
